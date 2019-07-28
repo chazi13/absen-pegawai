@@ -86,7 +86,7 @@ class Absensi extends CI_Controller
 
     public function export_excel()
     {
-        include_once APPPATH . 'third_party/PHPExcel/PHPExcel.php';
+        include_once APPPATH . 'third_party/PHPExcel.php';
         $data = $this->detail_data_absen();
         $hari = $data['hari'];
         $absen = $data['absen'];
